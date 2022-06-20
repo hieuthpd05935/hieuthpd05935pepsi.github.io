@@ -1,0 +1,418 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    height: 95px;
+    width: 100%;
+}
+nav div.menu{
+    background-color: rgb(255, 255, 255);
+    height: 95px;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+}
+.menuphai a{
+    font-size: 14.5px;
+    float: left;
+    padding-right: 50px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+.menutrai a{
+    font-size: 14.5px;
+    float: left;
+    padding-right: 50px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.logo{
+    position: relative;
+    width: 80px;
+    left: 35px;
+    top: 30px;
+}
+.menuphai{
+    position: relative;
+    left: 50px;
+    top: 2px;
+}
+.menutrai{
+    position: relative;
+    left: 720px;
+    bottom: 68px;
+}
+.logo2{
+    position: relative;
+    width: 95px;
+    right: 55px;
+    bottom: 10px;
+    transition: transform 0.3s;
+}
+.logo2:hover{
+    transform: rotate(360deg);
+}
+.link{
+    display: flex;
+    font-weight: 500;
+    font-size: 24px;
+    position: relative;
+    padding: 5px 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.link:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 30%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.link::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 30%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.link:hover{
+    color: rgb(0, 0, 0);
+}
+.link:hover::before{
+    right: 0;
+    margin-right: 50px;
+}
+.link:hover::after{
+    left: 00px;
+}
+ /*nút sign up*/
+ .middle{
+    position: relative;
+    position: absolute;
+    top: 49px;
+    left: 1280px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .btn{
+    background: none;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+  }
+  .btn:hover{
+    color: #fff;
+  }
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+  .btn2::before{
+    transform: scaleY(0);
+  }
+  .btn2:hover::before{
+    transform: scaleY(1);
+  }
+  /*nút sign up*/
+  /*sản phẩm*/
+.tongsanpham{
+    width: 100%;
+}
+.backsanpham2{
+    position: relative;
+    top: 50px;
+    display: flex;
+    right: 340px;
+    z-index: 1000;
+}
+.backsanpham{
+    position: relative;
+    top: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    width: 1050px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.container .card{
+    position: relative;
+    width: 320px;
+    height: 420px;
+    margin: 15px;
+    overflow: hidden;
+    border-radius: 3px;
+}
+.container .card span{
+    position: absolute;
+    display: block;
+    width: 0px;
+    height: 0px;
+    transform: translate(-50%,-50%);
+    border-radius: 50%;
+    opacity: 0.95;
+    background: #3456ff;
+    z-index: 10;
+    transition: width 0.5s, height 0.5s;
+}
+.container .card:hover span{
+    width: 1000px;
+    height: 1000px;
+}
+.container .card .imgBx{
+    position: absolute;
+    top: 18px;
+    left: 65px;
+    width: 215px;
+    height: 100%;
+    transition: 0.5s;
+}
+.container .card:hover{
+    z-index: 1;
+    transform: scale(1.1);
+}
+.container .card .imgBx img{
+    position: relative;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 90%;
+    height: 90%;
+}
+.container .card .content{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 100;
+}
+.container .card .content div{
+    padding: 40px;
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(50px);
+    transition: 0.2s;
+}
+.container .card:hover .content div{
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0px);
+}
+.container .card .content div h2{
+    color: #fff;
+    font-family: "montserrat",sans-serif;
+}
+  /*hết sản phẩm*/
+/*footer*/
+.footer{
+    width: 100%;
+    position: relative;
+    background-color: #3d69e8;
+    height: 360px;
+    margin-top: 200px;
+}
+.mayxanh{
+    position: absolute;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    bottom: 120px;
+}
+.mayxanh .xanh{
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: url(/as/img/wave3.png);
+    background-size: 1000px 100px;
+}
+.mayxanh .xanh.xanh1{
+    width: 100%;
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.mayxanh .xanh.xanh2{
+    width: 100%;
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.mayxanh .xanh.xanh3{
+    width: 100%;
+    animation: animate 15s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+.mayxanh .xanh.xanh4{
+    width: 100%;
+    animation: animate2 5s linear infinite;
+    z-index: 999;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate{
+    0%
+    {
+        background-position-x: 0;
+    }100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2{
+    0%
+    {
+        background-position-x: 0;
+    }100%{
+        background-position-x: 1000px;
+    }
+}
+.sci{
+    width: 100%;
+    position: absolute;
+    bottom: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50px;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    color: #fff;
+    display: inline-block;
+    margin-left: 25px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    font-size: 2em;
+}
+.sci li a :hover{
+    transform: translateY(-10px);
+}
+.hrefooter{
+    display: flex;
+    width: 100%;
+}
+.hrefooter a{
+    position: relative;
+    margin-left: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Mukta', sans-serif;
+    left: 450px;
+}
+.hrefooter a:hover{
+    color: silver;
+}
+.brand{
+    color: #fff;
+    position: relative;
+    top: 80px;
+    left: 505px;
+    font-size: 13px;
+}
+.middle2{
+    position: relative;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .btn1{
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  .btn1:hover{
+    color: rgb(0, 0, 0);
+  }
+  .btn1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+  .btn3::before{
+    transform: scaleY(0);
+  }
+  .btn3:hover::before{
+    transform: scaleY(1);
+  }
+.logopepsitrang{
+    width: 100px;
+    position: relative;
+    top: 34px;
+    left: 330px;
+}
+/*hết footer*/

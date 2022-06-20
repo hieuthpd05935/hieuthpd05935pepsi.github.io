@@ -1,0 +1,20 @@
+{
+	"folders": [
+		{
+			"path": ".."
+		},
+		{
+			"path": "..\\..\\JavaScript"
+		},
+		{
+			"path": "..\\..\\html5_css3"
+		},
+		{
+			"path": "..\\..\\htlm bài học 1"
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "kỹ thuật trình bày trang web",
+		"liveServer.settings.port": 5501
+	}
+}

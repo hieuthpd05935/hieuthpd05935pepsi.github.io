@@ -1,0 +1,447 @@
+*{
+    margin: 0;
+    padding: 0;
+    transition: 0.5s;
+}
+nav{
+    background-color: rgb(255, 255, 255);
+    height: 95px;
+    width: 100%;
+}
+nav div.menu{
+    background-color: rgb(255, 255, 255);
+    height: 95px;
+    width: 100%;
+    position: fixed;
+    z-index: 2000;
+}
+.menuphai a{
+    font-size: 14.5px;
+    float: left;
+    padding-right: 50px;
+    margin-top: 30px;
+    font-weight: 600;
+    font-family: 'Poppins', sans-serif;
+    color: black;
+    text-decoration: none;
+}
+.menutrai a{
+    font-size: 14.5px;
+    float: left;
+    padding-right: 50px;
+    color: black;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 600;
+    text-decoration: none;
+}
+.logo{
+    position: relative;
+    width: 80px;
+    left: 35px;
+    top: 30px;
+}
+.menuphai{
+    position: relative;
+    left: 50px;
+    top: 2px;
+}
+.menutrai{
+    position: relative;
+    left: 720px;
+    bottom: 68px;
+}
+.logo2{
+    position: relative;
+    width: 95px;
+    right: 55px;
+    bottom: 10px;
+    transition: transform 0.3s;
+}
+.logo2:hover{
+    transform: rotate(360deg);
+}
+.link{
+    display: flex;
+    font-weight: 500;
+    font-size: 24px;
+    position: relative;
+    padding: 5px 0;
+    overflow: hidden;
+    text-transform: uppercase;
+    transition: .3s;
+}
+.link:before{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 100%;
+    width: 30%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.link::after{
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 100%;
+    width: 30%;
+    height: 2px;
+    background-color: rgb(0, 0, 0);
+    transition: .5s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.link:hover{
+    color: rgb(0, 0, 0);
+}
+.link:hover::before{
+    right: 0;
+    margin-right: 50px;
+}
+.link:hover::after{
+    left: 00px;
+}
+ /*nút sign up*/
+ .middle{
+    position: relative;
+    position: absolute;
+    top: 49px;
+    left: 1280px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .btn{
+    background: none;
+    border: 2px solid rgb(0, 0, 0);
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 200px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+  }
+  .btn:hover{
+    color: #fff;
+  }
+  .btn::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+  .btn2::before{
+    transform: scaleY(0);
+  }
+  .btn2:hover::before{
+    transform: scaleY(1);
+  }
+  /*nút sign up*/
+  /*het menu*/
+.back{
+    position: relative;
+    width: 100%;
+    background-image: linear-gradient(to right bottom, rgb(255, 255, 255),   rgb(0, 0, 255));
+    bottom: 50px;
+    height: 900px;
+}
+#content {
+    width: 740px;
+}
+
+.tittle {
+    padding-left: 50px;
+}
+
+.khung {
+    margin-top: 30px;
+    margin-left: 70%;
+    width: 500px;
+    border: 5px solid white;
+    border-radius: 5px;
+    box-shadow: 0 0 10px #003cff;
+}
+
+#frames2,
+.select,
+#frames {
+    width: 405px;
+    height: 40px;
+    border: 2px solid rgb(194, 192, 192);
+    border-radius: 5px;
+    margin-bottom: 5px;
+}
+
+#noidung {
+    margin-top: 5px;
+    margin-left: 50px;
+}
+
+.nho {
+    margin-left: 10px;
+    line-height: 40px;
+}
+
+.dk {
+    margin-bottom: px;
+    width: 400px;
+    height: 35px;
+}
+
+.select {
+    padding-left: 10px;
+    width: 407px;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+.note {
+    width: 400px;
+    height: 70px;
+    border: 2px solid rgb(194, 192, 192);
+    border-radius: 5px;
+}
+
+.button:hover {
+    background-color: black;
+}
+
+.button {
+    width: 70px;
+    height: 30px;
+    color: white;
+    background-color: #003cff;
+    border: none;
+    cursor: pointer;
+}
+
+.but {
+    margin-bottom: 20px;
+}
+
+legend {
+    font-weight: 500;
+    font-size: 20px;
+}
+
+.p {
+    margin-top: 0;
+    color: #003cff;
+}
+.form-group {
+    margin-bottom: 15px;
+}
+
+.form-group input {
+    font-size: 20px;
+    border: 2px solid rgb(194, 192, 192);
+    border-radius: 5px;
+    background-color: none;
+}
+
+.form-group input:focus {
+    border-color: gray;
+    outline: 0;
+    background-color: none;
+    font-size: 20px;
+}
+
+span {
+    visibility: hidden;
+}
+
+.form-group.error span {
+    visibility: visible;
+    color: red;
+}
+
+.form-group.error .note,
+.form-group.error .dk {
+    background-color: #5d90ff
+}
+
+.form-group.success .note,
+.form-group.success .dk {
+    border: 2px solid #003cff;
+}
+/*footer*/
+.footer{
+    width: 100%;
+    position: relative;
+    background-color: #3d69e8;
+    height: 360px;  
+    margin-top: 200px;
+}
+.mayxanh{
+    position: absolute;
+    z-index: 5;
+    position: relative;
+    width: 100%;
+    height: 130px;
+    overflow: hidden;
+    bottom: 120px;
+}
+.mayxanh .xanh{
+    position: relative;
+    position: absolute;
+    width: 100%;
+    height: 100px;
+    background: url(/as/img/wave3.png);
+    background-size: 1000px 100px;
+}
+.mayxanh .xanh.xanh1{
+    width: 100%;
+    animation: animate 30s linear infinite;
+    z-index: 1000;
+    opacity: 1;
+    animation-delay: 0s;
+    bottom: 0;
+}
+.mayxanh .xanh.xanh2{
+    width: 100%;
+    animation: animate2 15s linear infinite;
+    z-index: 999;
+    opacity: 0.5;
+    animation-delay: -5s;
+    bottom: 10px;
+}
+.mayxanh .xanh.xanh3{
+    width: 100%;
+    animation: animate 15s linear infinite;
+    z-index: 998;
+    opacity: 0.2;
+    animation-delay: -2s;
+    bottom: 15px;
+}
+.mayxanh .xanh.xanh4{
+    width: 100%;
+    animation: animate2 5s linear infinite;
+    z-index: 999;
+    opacity: 0.7;
+    animation-delay: -5s;
+    bottom: 20px;
+}
+@keyframes animate{
+    0%
+    {
+        background-position-x: 0;
+    }100%{
+        background-position-x: 1000px;
+    }
+}
+@keyframes animate2{
+    0%
+    {
+        background-position-x: 0;
+    }100%{
+        background-position-x: 1000px;
+    }
+}
+.sci{
+    width: 100%;
+    position: absolute;
+    bottom: 280px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 50px;
+}
+.sci li{
+    list-style: none;
+}
+.sci li a{
+    color: #fff;
+    display: inline-block;
+    margin-left: 25px;
+    width: 100%;
+    height: 50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: 0.2s ease-in-out;
+    font-size: 2em;
+}
+.sci li a :hover{
+    transform: translateY(-10px);
+}
+.hrefooter{
+    width: 100%;
+    position: absolute;
+}
+.hrefooter a{
+    margin-left: 30px;
+    text-decoration: none;
+    color: #fff;
+    font-size: 15px;
+    font-family: 'Mukta', sans-serif;
+    position: relative;
+    left: 450px;
+}
+.hrefooter a:hover{
+    color: silver;
+}
+.brand{
+    color: #fff;
+    position: relative;
+    top: 80px;
+    left: 505px;
+    font-size: 13px;
+}
+.middle2{
+    position: relative;
+    position: absolute;
+    top: 200px;
+    left: 650px;
+    transform: translate(-50%,-50%);
+    text-align: center;
+  }
+  .btn1{
+    background: none;
+    border: 2px solid rgb(255, 255, 255);
+    font-family: "montserrat",sans-serif;
+    text-transform: uppercase;
+    padding: 12px 20px;
+    min-width: 150px;
+    margin: 10px;
+    cursor: pointer;
+    transition: color 0.4s linear;
+    position: relative;
+    color: rgb(255, 255, 255);
+  }
+  .btn1:hover{
+    color: rgb(0, 0, 0);
+  }
+  .btn1::before{
+    content: "";
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background: rgb(255, 255, 255);
+    z-index: -1;
+    transition: transform 0.5s;
+    transform-origin: 0 0;
+    transition-timing-function: cubic-bezier(0.5,1.6,0.4,0.7);
+  }
+  .btn3::before{
+    transform: scaleY(0);
+  }
+  .btn3:hover::before{
+    transform: scaleY(1);
+  }
+.logopepsitrang{
+    width: 100px;
+    position: relative;
+    top: 34px;
+    left: 330px;
+}
+/*hết footer*/
